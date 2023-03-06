@@ -20,11 +20,11 @@
     }
 
     li {
-        @apply p-4 text-sm
+        @apply p-4 text-sm font-semibold
     }
 
     button {
-        @apply px-4 py-2 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] hover:bg-transparent rounded-md
+        @apply px-4 py-2 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)]
     }
 
     h2 {

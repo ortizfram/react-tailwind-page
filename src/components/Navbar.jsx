@@ -1,48 +1,43 @@
-import React, {useState} from 'react';
-
-import MenuIcon from '@mui/icons-material/Menu';
-import ClearIcon from '@mui/icons-material/Clear';
-
+import React, { useState, useEffect } from "react";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)  
-  const handleClick = () => setNav(!nav)
-
-
   return (
-  <div className='w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
-      <div className='px-2 flex justify-between items-center w-full h-full'>
-        <div className='flex items-center mx-4'>
-          <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>YOGA PAGE.</h1>
-          <ul className='hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Classes</li>
-          </ul>
-        </div>
-        <div className='hidden md:flex pr-4'>
-          <button className='px-6 py-3 text-indigo-600 mr-4  bg-transparent text-indigo-600'>Log in</button>
-          <button className='border-none px-6 py-3 text-white font-bold'>Be a member</button>
-        </div>
-        <div className='mx-6 md:hidden' onClick={handleClick}>
-          {!nav ? <MenuIcon /> : <ClearIcon />}
-
-        </div>
+    <div>
+      <ul>
+        {/* page links */}
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#classes">Classes</a>
+        </li>
+        <li>
+          <a href="#register">Register</a>
+        </li>
+        <li>
+          <a href="#beamember">Be a member</a>
+        </li>
+      </ul>
+      <div>
+        {/* social icons */}
+        <FacebookIcon className="mx-4" />
+        <TwitterIcon className="mx-4" />
+        <InstagramIcon className="mx-4" />
       </div>
 
-    {/* DROPDOWN MENU */}
-    <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-12'}>
-      <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-      <li className='border-b-2 border-zinc-300 w-full'>About</li>
-      <li className='border-b-2 border-zinc-300 w-full'>Classes</li>
-
-      <div className='flex flex-col my-4'>
-        <button className='px-6 py-3 mb-4 text-indigo-600 bg-transparent text-indigo-600'>Log in</button>
-        <button className='border-none px-6 py-3 text-white font-bold'>Be a member</button>
+      {/* mobile menu */}
+      <div>
+        <MenuIcon />
       </div>
-    </ul>
-  </div>
+    </div>
   );
-}
+};
 
 export default Navbar;
