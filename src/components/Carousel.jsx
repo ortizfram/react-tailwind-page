@@ -4,8 +4,8 @@ import { Carousel } from "react-bootstrap";
 const HeroSlider = () => {
   return (
     <>
-      <Carousel className="p-12 mt-20 mx-60">
-        <Carousel.Item interval={1000}>
+      <Carousel className="h-screen p-12 mt-20 mx-60 max-w[1240px] flex flex-auto justify-center">
+        <Carousel.Item interval={800}>
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -18,10 +18,10 @@ const HeroSlider = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={800}>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/2361600/pexels-photo-2361600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/5704127/pexels-photo-5704127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -29,7 +29,7 @@ const HeroSlider = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={800}>
           <img
             className="d-block w-100"
             src="https://images.pexels.com/photos/5876816/pexels-photo-5876816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
