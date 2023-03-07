@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="pt-8 mt-5 w-full h-[70px] min-h-[50px] flex justify-between items-center absolute  text-white bg-gray-700/80">
+    <div className="pt-8 mt-5 w-full h-[10vh] min-h-[50px] flex justify-between items-center absolute  text-white bg-gray-700/80">
       <ul className="hidden sm:flex px-4">
         {/* page links */}
         <li>

@@ -4,7 +4,7 @@ import { Carousel } from "react-bootstrap";
 const HeroSlider = () => {
   return (
     <>
-      <Carousel className="h-screen p-12 mt-20 mx-60 max-w[1240px] flex flex-auto justify-center">
+      <Carousel className="h-screen mt-[-340px] p-6 justify-center">
         <Carousel.Item interval={800}>
           <img
             className="d-block w-100"
