@@ -9,8 +9,8 @@ function App() {
 
     return (
     <div>
-      <TopBar />
       <Navbar />
+      <TopBar />
       <Hero />
       <Carousel />
     </div>

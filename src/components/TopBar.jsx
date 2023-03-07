@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 
 const TopBar = () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
-
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
+    <div className="w-screen h-[80px] z-50 bg-zinc-200 fixed drop-shadow-lg shadow-md">
       <div className="flex justify-between items-center w-full h-full px-4 py-2">
         <div className="flex items-center mx-4">
           <BlurOnIcon className="mr-2 text-[var(--primary-dark)]" />

@@ -1,27 +1,34 @@
-import React from 'react';
-
+import React from "react";
 
 const Hero = () => {
   return (
-    <div className=' m-auto w-full h-screen bg-gradient-to-r from-violet-500 flex flex-col justify-between'>
-      <div className="grid md:grid-cols-2 max-w[1240px] m-auto ">
-        <div className='flex flex-col justify-center md:items-start w-full px- py-8 mx-8'>
-            <p className='text-2xl'>
-                Unique Platform</p><p>for</p>
-            <h1 className='py-3 text-5xl md:text-7xl font-bold'>
-                Yoga at Anytime Anywhere.</h1>
-            <button className='py-3 px-5 mx-4 my-5 mr-13'>
-                Start Now!</button>
-        </div>
-        <div className='m-auto'>
-            <img className='w-full' src="https://images.pexels.com/photos/13041008/pexels-photo-13041008.jpeg?auto=compress&cs=tinysrgb&w=400" alt="buddha" />
-        </div>
-        <div>
-            <p></p>
+    <div className="w-full h-screen object-cover">
+      <img
+        className="w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1518730101512-5b719bf28abb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt=""
+      />
+
+      {/* hero info container */}
+      <div className="max-w-[1140px] m-auto">
+        <div className="flex flex-start object-center absolute top-[25%] w-full md:-[50%] max-w-[600px] text-white p-4">
+          <div className="md:flex flex-col">
+            <h1 className="font-bold text-4xl md:text-6xl">Yoga at Anytime</h1>
+            <h2 className="text-4xl md:text-6xl italic">Anywhere.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              eius perspiciatis aliquid consectetur esse aperiam laborum
+            </p>
+          </div>
+          <img
+            className="w-full flex object-cover px-12 drop-shadow-2xl rounded-lg"
+            src="https://images.pexels.com/photos/13041008/pexels-photo-13041008.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt="buddha"
+          />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
