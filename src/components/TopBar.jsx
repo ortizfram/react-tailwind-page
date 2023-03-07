@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import ClearIcon from "@mui/icons-material/Clear";
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 
 const TopBar = () => {
@@ -17,11 +15,6 @@ const TopBar = () => {
             YOGA PAGE.
           </h1>
           {/* tailwind is mobile first !!! */}
-          <ul className="hidden md:flex items-center px-6">
-            <li>Home</li>
-            <li>About</li>
-            <li>Classes</li>
-          </ul>
         </div>
         <div className="hidden md:flex pr-4">
           <button className="px-6 py-3 text-white mr-4  bg-transparent text-indigo-600">
