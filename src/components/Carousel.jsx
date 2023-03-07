@@ -4,23 +4,21 @@ import { Carousel } from "react-bootstrap";
 const HeroSlider = () => {
   return (
     <>
-      <Carousel className="h-screen mt-[-340px] p-6 justify-center">
+      <Carousel className="mx-auto h-screen sm:mt-[-225px] mt-[-330px] p-6 justify-center sm:max-w-[1140px]">
         <Carousel.Item interval={800}>
           <img
-            className="d-block w-100"
+            className="d-block w-full object-cover h-[400px] sm:h-[50vh]"
             src="https://images.pexels.com/photos/301599/pexels-photo-301599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="First slide"
           />
           <Carousel.Caption>
             <h3>Sun Meditation!</h3>
-            <p>
-              for Chakras alignment <span>emoji</span> .
-            </p>
+            <p>for Chakras alignment.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={800}>
           <img
-            className="d-block w-100"
+            className="d-block w-full object-cover h-[400px] sm:h-[50vh]"
             src="https://images.pexels.com/photos/5704127/pexels-photo-5704127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Second slide"
           />
@@ -31,7 +29,7 @@ const HeroSlider = () => {
         </Carousel.Item>
         <Carousel.Item interval={800}>
           <img
-            className="d-block w-100"
+            className="d-block w-full object-cover h-[400px] sm:h-[50vh]"
             src="https://images.pexels.com/photos/5876816/pexels-photo-5876816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Third slide"
           />
