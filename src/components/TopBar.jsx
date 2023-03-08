@@ -14,11 +14,11 @@ const TopBar = () => {
           {/* tailwind is mobile first !!! */}
         </div>
         <div className="hidden md:flex pr-4">
-          <button className="px-6 py-3 text-white mr-4  bg-transparent text-indigo-600">
+          <button className="px-2 text-white mr-4  bg-transparent text-indigo-600 opacity-50">
             Log in
           </button>
-          <button className="border-none px-6 py-3 text-white font-bold">
-            Be a member
+          <button className="border-none px-6 py-3 text-white font-bold  rounded-3xl">
+            <a href="/auth/login">Be a member</a>
           </button>
         </div>
       </div>

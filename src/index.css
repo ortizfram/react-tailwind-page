@@ -4,26 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lato&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+/* global variables */
 :root {
-    --primary-dark: #5651e5;
-    --primary-light: #709dff;
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
+  --font-family: 'Poppins', sans-serif;
 }
 
-/* global variables */
-@layer base { 
-    html {
-        @apply scroll-smooth
-    }
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
 
-    body {
-        @apply font-[Poppins]
-    }
+  body {
+    font-family: var(--font-family);
+  }
 
-    li {
-        @apply p-4 text-sm font-semibold
-    }
+  li {
+    @apply p-4 text-sm font-semibold;
+  }
 
-    button {
-        @apply px-4 py-2 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)]
-    }
+  button {
+    @apply px-4 py-2 text-white border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)];
+  }
+
+  a {
+    @apply no-underline text-white;
+  }
 }
